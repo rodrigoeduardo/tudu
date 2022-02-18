@@ -2,15 +2,17 @@ main {
   position: relative;
   margin: 0 auto;
   outline: 1px solid black;
-  height: 100vh;
-  width: 480px;
+  min-height: 100vh;
+  max-width: 480px;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
 
   .wrapper {
+    min-height: 100vh;
     height: 100%;
-    padding: 0 2rem 0;
+    padding: 0 2rem 4rem;
     background-image: linear-gradient(180deg, transparent, #dce1e7);
+    overflow-y: auto;
 
     h1 {
       padding-top: 1rem;
@@ -24,6 +26,22 @@ main {
       color: #1a55b4;
       font-size: 1rem;
       font-weight: 600;
+    }
+
+    .view-more {
+      text-align: right;
+      color: #000;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .in-progress-list {
+      display: flex;
+      overflow-x: scroll;
+      margin-bottom: 1rem;
     }
   }
 }

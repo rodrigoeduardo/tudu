@@ -1,9 +1,19 @@
-<div class="wrapper">
+<div class="wrapper" [style.background-color]="color">
   <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
+  <p [style.color]="color">
+    {{
+      description.length > 12
+        ? (description | slice: 0:12) + "..."
+        : description
+    }}
+  </p>
 
-  <h2>{{ progress }}%</h2>
+  <h2 [style.color]="color">{{ progress }}%</h2>
   <div class="progress-bar">
-    <div class="fill"></div>
+    <div
+      class="fill"
+      [style.background-color]="color"
+      [style.width]="progress + '%'"
+    ></div>
   </div>
 </div>

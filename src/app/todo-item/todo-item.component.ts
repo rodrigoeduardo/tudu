@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TodoItemComponent implements OnInit {
   @Input() title: string = '';
   @Input() description: string = '';
+  @Input() color: string = '#999';
 
   constructor() {}
 

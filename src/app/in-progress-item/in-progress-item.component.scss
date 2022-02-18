@@ -1,8 +1,12 @@
 .wrapper {
   width: 10rem;
-  background-color: #fec857;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 20px;
+  margin-left: 1rem;
+
+  & + & {
+    margin-left: 1rem;
+  }
 
   h1 {
     color: #fff;
@@ -12,14 +16,15 @@
   }
 
   p {
-    color: #c2983f;
+    filter: brightness(0.8);
     font-size: 0.8rem;
     font-weight: 600;
+    margin-bottom: 0.5rem;
   }
 
   h2 {
     font-size: 1.5rem;
-    color: #99762c;
+    filter: brightness(0.7);
     font-weight: 600;
   }
 
@@ -32,7 +37,7 @@
       height: 5px;
       width: 52%;
       border-radius: 5px;
-      background-color: #99762c;
+      filter: brightness(0.7);
     }
   }
 }

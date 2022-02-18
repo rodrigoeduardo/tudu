@@ -9,6 +9,7 @@ export class InProgressItemComponent implements OnInit {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() progress: number = 0;
+  @Input() color: string = '';
 
   constructor() {}
 

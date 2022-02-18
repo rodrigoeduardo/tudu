@@ -2,24 +2,64 @@
   <div class="wrapper">
     <h1>Tarefas</h1>
 
-    <h2>A FAZER</h2>
-    <app-todo-item
-      [title]="'Desafio de Design UX/UI'"
-      [description]="'Descrição descrição'"
-    ></app-todo-item>
+    <div class="todo">
+      <h2>A FAZER</h2>
+      <app-todo-item
+        [title]="'Desafio de Design UX/UI'"
+        [description]="'Descrição descrição'"
+        [color]="'#FE746F'"
+      ></app-todo-item>
+      <app-todo-item
+        [title]="'Entrevista com a empresa'"
+        [description]="'Descrição descrição'"
+        [color]="'#FEC857'"
+      ></app-todo-item>
+      <app-todo-item
+        [title]="'Contratação'"
+        [description]="'Descrição descrição'"
+        [color]="'#1A55B4'"
+      ></app-todo-item>
+      <p class="view-more">Ver todos</p>
+    </div>
 
-    <h2>EM PROGRESSO</h2>
-    <app-in-progress-item
-      [title]="'Entrevista'"
-      [description]="'Descrição descrição'"
-      [progress]="54"
-    ></app-in-progress-item>
+    <div class="in-progress">
+      <h2>EM PROGRESSO</h2>
+      <div class="in-progress-list">
+        <app-in-progress-item
+          [title]="'Entrevista'"
+          [description]="'Descrição descrição'"
+          [progress]="54"
+          [color]="'#FEC857'"
+        ></app-in-progress-item>
+        <app-in-progress-item
+          [title]="'Desafio'"
+          [description]="'Descrição descrição'"
+          [progress]="37"
+          [color]="'#FE746F'"
+        ></app-in-progress-item>
+        <app-in-progress-item
+          [title]="'Conferência'"
+          [description]="'Descrição descrição'"
+          [progress]="10"
+          [color]="'#1A55B4'"
+        ></app-in-progress-item>
+      </div>
+      <p class="view-more">Ver todos</p>
+    </div>
 
-    <h2>CONCLUÍDO</h2>
-    <app-done-item
-      [title]="'Inscrição'"
-      [description]="'Descrição descrição'"
-    ></app-done-item>
+    <div class="done">
+      <h2>CONCLUÍDO</h2>
+      <app-done-item
+        [title]="'Inscrição'"
+        [description]="'Descrição descrição descrição'"
+      ></app-done-item>
+      <app-done-item
+        [title]="'Entrevista com empresa'"
+        [description]="'Descrição descrição descrição'"
+      ></app-done-item>
+      <p class="view-more">Ver todos</p>
+    </div>
   </div>
   <app-nav-bar></app-nav-bar>
+  <app-create-todo></app-create-todo>
 </main>
