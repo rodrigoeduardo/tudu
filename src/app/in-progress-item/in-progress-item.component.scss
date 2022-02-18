@@ -1,0 +1,38 @@
+.wrapper {
+  width: 10rem;
+  background-color: #fec857;
+  padding: 1rem;
+  border-radius: 20px;
+
+  h1 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  p {
+    color: #c2983f;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #99762c;
+    font-weight: 600;
+  }
+
+  .progress-bar {
+    height: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    .fill {
+      height: 5px;
+      width: 52%;
+      border-radius: 5px;
+      background-color: #99762c;
+    }
+  }
+}

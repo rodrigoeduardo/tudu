@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  background-color: #d4dee4;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin: 0.8rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: #000;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .description {
+      color: #8d9092;
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+}

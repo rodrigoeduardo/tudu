@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  background-color: #fe746f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+
+  img {
+    width: 28px;
+    height: 28px;
+    margin: 0.8rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .todo-title {
+      color: #fff;
+      margin: 0;
+    }
+
+    .description {
+      color: #b1504c;
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+}
