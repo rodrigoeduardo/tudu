@@ -60,6 +60,6 @@
       <p class="view-more">Ver todos</p>
     </div>
   </div>
-  <app-nav-bar></app-nav-bar>
-  <app-create-todo></app-create-todo>
+  <app-nav-bar (toggleCreateTodo)="showCreateTodo()"></app-nav-bar>
+  <app-create-todo [componentDisplay]="createTodoDisplay"></app-create-todo>
 </main>

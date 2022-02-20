@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-create-todo',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-todo.component.scss'],
 })
 export class CreateTodoComponent implements OnInit {
+  @Input() componentDisplay: string = 'none';
+
   constructor() {}
 
   ngOnInit(): void {}
